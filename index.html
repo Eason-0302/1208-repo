@@ -89,7 +89,7 @@
     /* Skills */
     .skills {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
 
@@ -232,6 +232,7 @@
   <p class="sub">專注於資訊能力與醫療背景的結合。</p>
 
   <div class="skills">
+    <!-- A 版：進度條（3 欄） -->
     <div class="skill">
       <div class="skill-title">
         <span>程式設計</span>
@@ -242,7 +243,15 @@
 
     <div class="skill">
       <div class="skill-title">
-        <span>醫學資訊臨床分析</span>
+        <span>Python</span>
+        <span>75%</span>
+      </div>
+      <div class="bar-outer"><div class="bar-inner" style="width:75%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">
+        <span>前端 (HTML/CSS/JS)</span>
         <span>70%</span>
       </div>
       <div class="bar-outer"><div class="bar-inner" style="width:70%;"></div></div>
@@ -250,10 +259,26 @@
 
     <div class="skill">
       <div class="skill-title">
-        <span>管理資訊系統</span>
+        <span>資料分析</span>
+        <span>70%</span>
+      </div>
+      <div class="bar-outer"><div class="bar-inner" style="width:70%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">
+        <span>資料庫</span>
         <span>65%</span>
       </div>
       <div class="bar-outer"><div class="bar-inner" style="width:65%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">
+        <span>醫學資訊系統</span>
+        <span>68%</span>
+      </div>
+      <div class="bar-outer"><div class="bar-inner" style="width:68%;"></div></div>
     </div>
   </div>
 </section>
