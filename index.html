@@ -88,10 +88,35 @@
 
     /* Skills */
     .skills {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: block;
       gap: 1rem;
     }
+
+    /* Tag cloud style (B 版) */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      padding: 0.6rem 0;
+    }
+
+    .tag {
+      background: #0b1220;
+      border: 1px solid #1f2937;
+      color: #c7d2fe;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      display: inline-block;
+      transition: transform 0.12s;
+    }
+
+    .tag:hover { transform: translateY(-3px); }
+
+    /* size variants */
+    .tag-xs { font-size: 0.75rem; }
+    .tag-sm { font-size: 0.85rem; }
+    .tag-md { font-size: 1rem; }
+    .tag-lg { font-size: 1.15rem; }
 
     .skill {
       background: #020617;
@@ -232,28 +257,19 @@
   <p class="sub">專注於資訊能力與醫療背景的結合。</p>
 
   <div class="skills">
-    <div class="skill">
-      <div class="skill-title">
-        <span>程式設計</span>
-        <span>80%</span>
-      </div>
-      <div class="bar-outer"><div class="bar-inner" style="width:80%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title">
-        <span>醫學資訊臨床分析</span>
-        <span>70%</span>
-      </div>
-      <div class="bar-outer"><div class="bar-inner" style="width:70%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title">
-        <span>管理資訊系統</span>
-        <span>65%</span>
-      </div>
-      <div class="bar-outer"><div class="bar-inner" style="width:65%;"></div></div>
+    <!-- B 版：標籤雲（tag cloud） -->
+    <div class="tag-cloud">
+      <span class="tag tag-lg">程式設計</span>
+      <span class="tag tag-md">Python</span>
+      <span class="tag tag-sm">前端</span>
+      <span class="tag tag-md">資料分析</span>
+      <span class="tag tag-sm">資料庫</span>
+      <span class="tag tag-md">醫學資訊</span>
+      <span class="tag tag-xs">Linux</span>
+      <span class="tag tag-sm">Git</span>
+      <span class="tag tag-xs">SQL</span>
+      <span class="tag tag-sm">可視化</span>
+      <span class="tag tag-md">溝通能力</span>
     </div>
   </div>
 </section>
